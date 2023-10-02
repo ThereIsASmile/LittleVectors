@@ -1,0 +1,44 @@
+/* ---------- HEADER ---------- */
+.header {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: rgb(43, 43, 43);
+    position: relative;
+    width: 100%;
+    /* make the header full width */
+    flex-shrink: 0;
+    /* Prevent the header from shrinking */
+}
+
+.lvlogoheader {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.LvLogoImg {
+    max-width: 50%;
+}
+
+.navbar {
+    margin-right: 5%;
+    position: absolute;
+    top: 1%;
+    right: 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}

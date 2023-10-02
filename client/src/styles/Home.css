@@ -1,0 +1,100 @@
+/* ---------- Hero image contains bike ---------- */
+
+.hero-image {
+    min-height: 280px;
+}
+
+
+/* ---------- Bike and spinning wheels ---------- */
+.bike-box {
+    padding-top: 10%;
+    padding-bottom: 4%;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+}
+
+
+.lwheel {
+    height: 66%;
+    position: absolute;
+    top: 96%;
+    left: 35.8%;
+    /* transform: translate(-50%, -50%); */
+}
+.rwheel {
+    height: 66%;
+    position: absolute;
+    top: 96%;
+    left: 52%;
+    /* transform: translate(-50%, -50%); */
+}
+.bike {
+    height: 200%;
+    pointer-events: none;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.line {
+    position: absolute;
+    top: 161%;
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .bike-wheels {
+        animation: bike-wheels-spin infinite 20s linear;
+    }
+}
+
+@keyframes bike-wheels-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------- Home Main ---------- */
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.LearnButtonDiv li a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 0);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block; /* button takes the necessary width */
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.LearnButtonLi {
+    list-style-type: none; 
+}
+
+.LearnButtonDiv {
+    margin-top: 20%;
+}
+
+.LearnButtonLink:hover {
+    background-color: rgb(237, 100, 100);
+    color: white;
+    transform: scale(1.9); /* Grow the button when hovered */
+  }
+  
